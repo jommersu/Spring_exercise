@@ -1,0 +1,20 @@
+<html xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<#include "/Header.html">
+Hi Guys!
+value1 is ${value1!}
+value2 is ${value2!}
+
+colors is
+<#list colors as item>
+    ${item}</br>
+</#list>
+
+map is
+<#list map?keys as key>
+    ${key}:${map[key]}</br>
+</#list>
+
+User is : ${User.name}
+${User.description}
+${User.getDescription()}
+</html>
